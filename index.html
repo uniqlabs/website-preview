@@ -22,9 +22,9 @@
 <script>
     var lang = navigator.language || navigator.userLanguage;
     if (lang.indexOf('de') == 0)
-        window.location = '/de/';
+        window.location = '{{ site.url }}/de/';
     else
-        window.location = '/en/';
+        window.location = '{{ site.url }}/en/';
 </script>
 </body>
 </html>
