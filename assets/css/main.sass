@@ -1,0 +1,489 @@
+/** Fonts **/
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700')
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+/** Size Defs **/
+$textFont: 'Raleway', sans-serif
+$headingFont: 'Arimo', sans-serif
+
+/** Color Defs **/
+$white: #fff
+$lightWhite: #f9f9f9
+$silver: #ddd
+$gray: #808080
+$darkGray: #333
+$dark: #1a1a1a
+$black: #000
+$green: #5cb85c
+$teal: #30bda3
+$lightBlue: #26b7d4
+$darkBlue: #087ea6
+$raspberry: #e04e5e
+$brightRed: #fc535a
+$darkYellow: #eeb024
+$lightYellow: #fae250
+
+
+/* General */
+*
+  margin: 0
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+  color: $raspberry
+
+img
+  text-decoration: none
+  border: none
+
+html, body
+  height: 100%
+  font-family: $textFont
+  font-size: 16px
+  color: $dark
+  margin: 0
+  padding: 0
+
+body
+  position: relative
+
+h1, h2, h3, h4
+  font-family: $headingFont
+
+h1
+  font-size: 44px
+
+h2
+  font-size: 36px
+
+p
+  font-size: 18px
+
+.btn
+  font-family: $headingFont
+  font-weight: 700
+  text-transform: uppercase
+
+span.rv
+  unicode-bidi: bidi-override
+  direction: rtl
+
+.full-width
+  width: 100%
+
+/** Sizes **/
+i.medium
+  font-size: 32px
+
+i.huge
+  font-size: 72px
+
+/** Colors **/
+.green
+  color: $green
+
+.bg-light-white
+  color: $darkGray
+  background: $lightWhite
+
+.bg-teal
+  background: $teal
+
+/** Responsive Switches **/
+@media (min-width: 576px)
+  .xs-only
+    display: none
+
+@media (min-width: 768px)
+  .sm-only
+    display: none
+
+/** Soft Breaks **/
+@media (min-width: 992px)
+  .lg-sbr, .lg-only-sbr
+    display: block
+
+@media (min-width: 1199px)
+  .lg-only-sbr
+    display: none
+
+@media (max-width: 429px)
+  .sp-sbr-1:before
+    content: ' '
+    display: block
+
+@media (min-width: 430px)
+  .sp-sbr-1:before
+    content: ''
+    display: none
+
+@media (min-width: 992px)
+  .sp-sbr-1:before
+    content: ' '
+    display: block
+
+/** Flexbox **/
+.hbox
+  display: flex
+
+.vbox
+  display: flex
+  flex-direction: column
+
+.flex-fill
+  flex: 1
+
+.flex-center
+  align-items: center
+
+.flex-center-center
+  align-items: center
+  justify-content: center
+
+.flex-start
+  align-self: flex-start
+
+.flex-end
+  align-self: flex-end
+
+/** Margins and Padding **/
+.mt10
+  margin-top: 10px
+
+.mt20
+  margin-top: 20px
+
+.mr10
+  margin-right: 10px
+
+.mb10
+  margin-bottom: 10px
+
+.mb30
+  margin-bottom: 30px
+
+.pt10
+  padding-top: 10px
+
+.pt20
+  padding-top: 20px
+
+.pt60
+  padding-top: 60px
+
+.pb20
+  padding-bottom: 20px
+
+.pb40
+  padding-bottom: 40px
+
+.pb80
+  padding-bottom: 80px
+
+.p5
+  padding: 5px
+
+.hp20
+  padding-left: 20px
+  padding-right: 20px
+
+@media (min-width: 992px)
+  .lg-pdr5
+    padding-right: 5px
+
+@media (min-width: 992px)
+  .lg-pdr10
+    padding-right: 10px
+
+@media (min-width: 992px)
+  .lg-pdr25
+    padding-right: 25px
+
+@media (min-width: 992px)
+  .lg-pdl5
+    padding-left: 5px
+
+@media (min-width: 992px)
+  .lg-pdl10
+    padding-left: 10px
+
+@media (min-width: 992px)
+  .lg-pdl25
+    padding-left: 25px
+
+/** Alignment **/
+.text-left-md-right
+  text-align: left
+
+@media (min-width: 768px)
+  .text-left-md-right
+    text-align: right
+
+.text-center-md-left
+  text-align: center
+
+@media (min-width: 768px)
+  .text-center-md-left
+    text-align: left
+
+.text-center-md-right
+  text-align: center
+
+@media (min-width: 768px)
+  .text-center-md-right
+    text-align: right
+
+@media (min-width: 768px)
+  .text-md-center
+    text-align: center
+
+
+
+/** Visibility **/
+@media (max-width: 767px)
+  .hidden-sm-down
+    display: none
+
+@media (min-width: 768px)
+  .hidden-md-up
+    display: none
+
+/** Navbar **/
+.navbar
+  background: transparent
+  border: none
+  a.navbar-brand
+    padding-top: 12px
+
+.navbar.main
+  height: 96px
+  background: transparent url('../img/navbar_bg.png') repeat-x 0 0
+
+/** Cover **/
+.cover
+  width: 100%
+  background: url('../img/bg_slant_bl_gray.svg') bottom left no-repeat, url('../img/uniq_cover_01.jpg') center center
+  background-size: 100vw auto, cover
+  .claim
+    color: $white
+    font-weight: 400
+    margin-bottom: 88px
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+
+@media (max-width: 576px)
+  h1.claim
+    font-size: 32px
+
+.arrow
+  display: none
+  position: fixed
+  bottom: 0
+  left: 50%
+  margin-left: -27px
+  margin-bottom: 36px
+  width: 54px
+  height: 30px
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDcyIDQwIiB2ZXJzaW9uPSIxLjEiPjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kOyIgZD0iTSA2Ny4yNzY3Nyw0LjM4MDMxMTEgMzYsMzUuNjU3MDcxIDQuNzIzMjMsNC4zODAzMTExIi8+PC9zdmc+DQo=)
+  background-size: contain
+
+.bounce
+  -webkit-animation: bounce 2.5s infinite
+  animation: bounce 2.5s infinite
+
+@keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -webkit-transform: translateY(0)
+    -moz-transform: translateY(0)
+    -ms-transform: translateY(0)
+    -o-transform: translateY(0)
+    transform: translateY(0)
+  40%
+    -webkit-transform: translateY(-8px)
+    -moz-transform: translateY(-8px)
+    -ms-transform: translateY(-8px)
+    -o-transform: translateY(-8px)
+    transform: translateY(-8px)
+  60%
+    -webkit-transform: translateY(-4px)
+    -moz-transform: translateY(-4px)
+    -ms-transform: translateY(-4px)
+    -o-transform: translateY(-4px)
+    transform: translateY(-4px)
+
+.what
+  background: $lightWhite url('../img/bg_slant_br_blue.svg') bottom left no-repeat
+  background-size: 100vw auto
+
+.features
+  p
+    color: $dark
+    font-size: 15px
+  ul
+    color: $dark
+    font-size: 15px
+    margin-left: 8px
+    list-style: none
+    li
+      background: url('../img/checkmark_green.svg') 0 3px no-repeat
+      padding-left: 24px
+
+#alertRow
+  display: none
+
+.help-block
+  padding-left: 5px
+  font-size: 12px
+
+.testimonials
+  background: $lightBlue
+  color: $white
+  p
+    padding-bottom: 48px
+
+.testimonial:before
+  content: ''
+  display: block
+  position: absolute
+  left: -54px
+  bottom: 0
+  width: 64px
+  height: 64px
+  background: url('../img/quote_open.png') no-repeat center center
+  background-size: cover
+
+.testimonial:after
+  content: ''
+  display: block
+  position: absolute
+  right: -42px
+  top: 10px
+  width: 64px
+  height: 64px
+  background: url('../img/quote_close.png') no-repeat center center
+  background-size: cover
+
+.how
+  background: url('../img/bg_slant_b_red.svg') bottom left no-repeat, url('../img/bg_slant_t_blue_green.svg') top left no-repeat
+  background-size: 100vw auto, 100vw auto
+  img
+    margin-left: -2.5px
+  h3
+    color: $dark
+    font-family: $textFont
+    font-size: 20px
+  p
+    color: $gray
+    font-size: 18px
+  .card
+    height: 100%
+    .front, .back
+      padding: 20px 30px
+
+@media (min-width: 768px)
+  .connector-padding
+    padding-left: 48px
+    padding-right: 42px
+
+@media (min-width: 992px)
+  .connector-padding
+    padding-left: 78px
+    padding-right: 78px
+
+@media (min-width: 1200px)
+  .connector-padding
+    padding-left: 110px
+    padding-right: 110px
+
+.faq
+  background: $raspberry
+  color: $white
+  p
+    color: $lightWhite
+    font-size: 15px
+  a
+    font-size: 18px
+    color: $lightYellow
+  a:hover
+    color: $darkYellow
+
+.good-to-know
+  background: url('../img/bg_slant_tl_red.svg') top left no-repeat, url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat
+  background-size: 100vw auto, 100vw auto
+  .card
+    h3
+      font-family: $textFont
+      font-size: 18px
+    p
+      font-size: 16px
+    img
+      margin-top: 10px
+    .front
+      border: 1px solid $silver
+    .back
+      padding: 32px
+      border: 1px solid $gray
+
+footer
+  background: $lightWhite
+  .lang
+    font-family: $headingFont
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    color: $lightBlue
+    padding-left: 5px
+  .copyright
+    float: right
+    padding-top: 6px
+    padding-left: 8px
+    font-size: 12px
+    font-weight: 300
+    color: $silver
+  h4
+    margin: 18px 0 8px 0
+    font-size: 14px
+    text-transform: uppercase
+    color: $darkGray
+  a
+    margin: 3px 0
+    font-size: 14px
+    display: block
+    color: $gray
+
+.dropup
+  margin-top: 4px
+
+#lang-dd
+  cursor: pointer
+#lang-dd:hover
+  opacity: 0.85
+
+.dropdown-menu > li > a
+  font-size: 15px
+  font-weight: 300
+
+.dropdown-menu > li > a.active
+  font-weight: 400
+  padding: 4px 0 10px 40px
+  background: url('../img/icon_checkmark_blue.png') no-repeat 12px 3px
+  background-size: 24px 24px
+  color: $lightBlue
+
+@media (min-width: 768px)
+  footer
+    .copyright
+      display: block
+      float: none
+      margin-top: 61px
+    h4
+      margin: 8px 0 18px 0
+    a
+      margin: 6px 0
