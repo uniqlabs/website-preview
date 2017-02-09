@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://www.uniq.vision/de/impressum.html</loc>
-<lastmod>2017-01-12T14:22:21+01:00</lastmod>
+<loc>http://preview.uniq.vision/de/impressum/</loc>
 </url>
 <url>
-<loc>http://www.uniq.vision/de/index.html</loc>
-<lastmod>2017-02-08T17:16:29+01:00</lastmod>
+<loc>http://preview.uniq.vision/de/</loc>
 </url>
 <url>
-<loc>http://www.uniq.vision/index.html</loc>
+<loc>http://preview.uniq.vision/de/base.html</loc>
 <lastmod>2017-02-08T19:33:25+01:00</lastmod>
 </url>
 </urlset>

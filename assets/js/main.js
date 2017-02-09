@@ -1,9 +1,9 @@
 $(document).ready(function () {
     // Fix background cover jump on mobile (see http://stackoverflow.com/a/30200804)
-    $('#cover').css('height', window.innerHeight);
+    $('#cover').css('height', window.innerHeight + 20);
 
     var vals = window.location.href.split('/');
-    var lang = (vals.length > 3) ? vals[3] : 'de';
+    var lang = (vals.length > 3) ? vals[3] : 'en';
 
     // Animate the arrow
     var a = $('.arrow');
@@ -27,12 +27,6 @@ $(document).ready(function () {
             nb.fadeOut();
         else
             nb.fadeIn();
-    });
-
-    // React to clicks on the arrow
-    $('#arrow').click(function (e) {
-        e.preventDefault();
-        scrollToElement($('#what'));
     });
 
     // Init the testimonial slider
@@ -95,10 +89,6 @@ $(document).ready(function () {
     }
 
     // Helpers
-    function scrollToElement(el) {
-        $('html,body').animate({scrollTop: el.offset().top}, 400);
-    }
-
     function stopAnimation() {
         a.stop();
         a.hide();

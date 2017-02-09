@@ -58,6 +58,10 @@ span.rv {
 .full-width {
   width: 100%; }
 
+.bg-slant-gray {
+  background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
+  background-size: 100vw auto; }
+
 /** Sizes */
 i.medium {
   font-size: 32px; }
@@ -225,9 +229,34 @@ i.huge {
   height: 96px;
   background: transparent url("../img/navbar_bg.png") repeat-x 0 0; }
 
+.navbar-default .navbar-nav > li > a {
+  font-family: "Arimo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 24px;
+  padding: 6px 16px;
+  color: #f9f9f9;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f9f9f9; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ddd; }
+
+.navbar-default .navbar-nav > li > a.btn-basic {
+  font-size: 12px;
+  margin-left: 20px;
+  border: 1px solid #f9f9f9; }
+
+.navbar-default .navbar-nav > li > a.btn-basic:hover {
+  background: #fff;
+  color: #1a1a1a; }
+
 /** Cover */
 .cover {
   width: 100%;
+  height: calc(100vh + 20px);
   background: url("../img/bg_slant_bl_gray.svg") bottom left no-repeat, url("../img/uniq_cover_01.jpg") center center;
   background-size: 100vw auto, cover; }
   .cover .claim {
@@ -245,10 +274,10 @@ i.huge {
   bottom: 0;
   left: 50%;
   margin-left: -27px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   width: 54px;
   height: 30px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDcyIDQwIiB2ZXJzaW9uPSIxLjEiPjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kOyIgZD0iTSA2Ny4yNzY3Nyw0LjM4MDMxMTEgMzYsMzUuNjU3MDcxIDQuNzIzMjMsNC4zODAzMTExIi8+PC9zdmc+DQo=);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDcyIDQwIiB2ZXJzaW9uPSIxLjEiPjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kOyIgZD0iTSA2Ny4yNzY3Nyw0LjM4MDMxMTEgMzYsMzUuNjU3MDcxIDQuNzIzMjMsNC4zODAzMTExIi8+PC9zdmc+DQo=) no-repeat;
   background-size: contain; }
 
 .bounce {
@@ -381,6 +410,12 @@ i.huge {
   .good-to-know .card .back {
     padding: 32px;
     border: 1px solid #808080; }
+
+.cta {
+  background: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0; }
+  .cta h3 {
+    margin-top: 2px; }
 
 footer {
   background: #f9f9f9; }
