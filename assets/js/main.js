@@ -1,7 +1,8 @@
 $(document).ready(function () {
     // Fix background cover jump on mobile (see http://stackoverflow.com/a/30200804)
-    $('#cover').css('height', window.innerHeight + 20);
+    $('.cover').css('height', window.innerHeight + 20);
 
+    // Get current language
     var vals = window.location.href.split('/');
     var lang = (vals.length > 3) ? vals[3] : 'en';
 

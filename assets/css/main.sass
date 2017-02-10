@@ -9,7 +9,7 @@ $headingFont: 'Arimo', sans-serif
 /** Color Defs **/
 $white: #fff
 $lightWhite: #f9f9f9
-$lightGray: #e0e0e0
+$lightGray: #e8e8e8
 $silver: #ddd
 $gray: #808080
 $darkGray: #333
@@ -80,6 +80,9 @@ span.rv
 .full-width
   width: 100%
 
+.full-height
+  height: 100%
+
 .bg-slant-gray
   background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat
   background-size: 100vw auto
@@ -148,6 +151,7 @@ i.huge
 
 .flex-center
   align-items: center
+  justify-content: center
 
 .flex-center-center
   align-items: center
@@ -199,6 +203,10 @@ i.huge
 .hp20
   padding-left: 20px
   padding-right: 20px
+
+.hp40
+  padding-left: 30px
+  padding-right: 30px
 
 @media (min-width: 992px)
   .lg-pdr5
@@ -461,6 +469,61 @@ i.huge
       padding: 32px
       border: 1px solid $gray
 
+.coaching-cover
+  width: 100%
+  height: calc(100vh + 20px)
+  background: url('../img/bg_slant_bl_gray.svg') bottom left no-repeat, url('../img/uniq_cover_02.jpg') center center
+  background-size: 100vw auto, cover
+
+.application-box
+  background: rgba(255, 255, 255, 0.9)
+  padding: 8px 16px
+  border-radius: 4px
+  h2
+    font-size: 28px
+    margin: 16px 0 24px 0
+  label
+    font-size: 14px
+    font-weight: 300
+  .form-group button
+    text-transform: none
+    font-size: 13px
+    font-weight: 300
+    color: $darkGray
+  .dropdown-menu > li > a
+    font-size: 13px
+    color: $darkGray
+
+.coaching-what
+  background: $lightWhite url('../img/bg_slant_b_red.svg') bottom left no-repeat
+  background-size: 100vw auto
+  .benefit
+    img
+      margin-bottom: 16px
+    p
+      font-size: 15px
+  .disclaimer
+    font-size: 14px
+    color: $gray
+
+.coaching-testimonials
+  background: $raspberry
+  color: $white
+  p
+    padding-bottom: 48px
+
+.coaching-prerequisites
+  background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat, url('../img/bg_slant_tl_red.svg') top left no-repeat
+  background-size: 100vw auto, 100vw auto
+  ul
+    color: $dark
+    font-size: 16px
+    margin: 16px 0 0 8px
+    list-style: none
+    li
+      background: url('../img/checkmark_green.svg') 0 3px no-repeat
+      padding-left: 24px
+
 .cta
   background: $lightWhite
   border-bottom: 1px solid $lightGray
@@ -493,25 +556,21 @@ footer
     font-size: 14px
     display: block
     color: $gray
-
-.dropup
-  margin-top: 4px
-
-#lang-dd
-  cursor: pointer
-#lang-dd:hover
-  opacity: 0.85
-
-.dropdown-menu > li > a
-  font-size: 15px
-  font-weight: 300
-
-.dropdown-menu > li > a.active
-  font-weight: 400
-  padding: 4px 0 10px 40px
-  background: url('../img/icon_checkmark_blue.png') no-repeat 12px 3px
-  background-size: 24px 24px
-  color: $lightBlue
+  .dropup
+    margin-top: 4px
+  #lang-dd
+    cursor: pointer
+  #lang-dd:hover
+    opacity: 0.85
+  .dropdown-menu > li > a
+    font-size: 15px
+    font-weight: 300
+  .dropdown-menu > li > a.active
+    font-weight: 400
+    padding: 4px 0 10px 40px
+    background: url('../img/icon_checkmark_blue.png') no-repeat 12px 3px
+    background-size: 24px 24px
+    color: $lightBlue
 
 @media (min-width: 768px)
   footer
