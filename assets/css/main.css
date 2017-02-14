@@ -255,7 +255,8 @@ i.huge {
 .navbar-default .navbar-nav > li > a.btn-basic {
   font-size: 12px;
   margin-left: 20px;
-  border: 1px solid #f9f9f9; }
+  border: 1px solid #f9f9f9;
+  border-radius: 2px; }
 
 .navbar-default .navbar-nav > li > a.btn-basic:hover {
   background: #fff;
@@ -418,6 +419,16 @@ i.huge {
   .good-to-know .card .back {
     padding: 32px;
     border: 1px solid #808080; }
+
+.faq-entry h4 {
+  margin-top: 20px;
+  color: #26b7d4;
+  cursor: pointer; }
+.faq-entry p {
+  font-size: 15px; }
+
+.team-member p {
+  font-size: 14px; }
 
 .coaching-cover {
   width: 100%;
