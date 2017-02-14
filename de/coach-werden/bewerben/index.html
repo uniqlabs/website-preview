@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UNIQ ist der Personal Trainer für Deine Lebensziele."/>
+    <meta name="keywords" content="Uniq, App, Life, Coaching, Personal, Trainer, Lebensziele, Transformation, Erfüllung, Traum, Vision"/>
+    <title>UNIQ - Truly me.</title>
+    <meta property="og:title" content="UNIQ"/>
+    <meta property="og:image" content="http://www.uniq.vision/assets/img/uniq_facebook_bg.png"/>
+    <meta property="og:description" content="UNIQ ist der Personal Trainer für Deine Lebensziele. Unser revolutionäres Trainingsprogramm hilft Dir, bisher unerreichte Lebensziele zu finden und zu verwirklichen."/>
+    <meta property="og:url" content="/de/coach-werden/bewerben/"/>
+    <meta property="og:locale" content="de_DE"/>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="73">
+
+<nav id="nav" class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/de">
+                <img src="/assets/img/uniq_logo.png" width="120" height="48">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section class="bg-slant-gray mt20 pb80">
+    <div class="container">
+        <div class="row">
+    <div class="col-xs-12 text-center">
+        <img src="/assets/img/icon_happiness_box.png" width="100" height="100">
+        <h1>Deine Bewerbung</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+        <form class="application">
+            <h4>Persönliche Daten</h4>
+            <div class="form-group">
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="female" value="female"> Frau
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="male" value="male"> Herr
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Vorname" class="form-control"
+                       id="firstName" data-error="Bitte gib Deinen Vornamen ein." required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Nachname" class="form-control"
+                       id="lastName" data-error="Bitte gib Deinen Nachnamen ein." required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Alter" min="18" max="99" class="form-control"
+                       id="age" data-error="Bitte gib Dein Alter ein." required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Deine Stadt" class="form-control"
+                       id="city" data-error="Bitte verrate uns Deinen Wohnort." required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <h4>Rahmenbedingungen</h4>
+            <div class="form-group">
+                <label for="experience">Bisherige Erfahrung</label>
+                <select id="experience" class="selectpicker" data-style="btn-default btn-block">
+                    <option value="0">Keine</option>
+                    <option value="1">Coachingausbildung</option>
+                    <option value="2">Mediationsausbildung</option>
+                    <option value="3">NLP-Ausbildung</option>
+                    <option value="4">Psychologiestudium</option>
+                    <option value="5">Sozialarbeit</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time">Zeit pro Woche</label>
+                <select id="time" class="selectpicker" data-style="btn-default btn-block">
+                    <option value="0">2-5 Stunden</option>
+                    <option value="1">5-10 Stunden</option>
+                    <option value="2">10-15 Stunden</option>
+                    <option value="3">Mehr als 15 Stunden</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availability">Wann hast Du vorwiegend Zeit?</label>
+                <select id="availability" class="selectpicker" data-style="btn-default btn-block">
+                    <option value="0">Unter der Woche, abends</option>
+                    <option value="1">Unter der Woche, tagsüber</option>
+                    <option value="2">Unter der Woche, tagsüber und abends</option>
+                    <option value="3">Am Wochenende, abends</option>
+                    <option value="4">Am Wochenende, tagsüber</option>
+                    <option value="5">Am Wochenende, tagsüber und abends</option>
+                    <option value="6">Die gesamte Woche, abends</option>
+                    <option value="7">Die gesamte Woche, tagsüber</option>
+                    <option value="8">Immer</option>
+                </select>
+            </div>
+            <h4>Kontakt</h4>
+            <div class="form-group">
+                <input type="text" placeholder="E-Mail-Adresse" class="form-control"
+                       id="email" data-error="Wie können wir Dich anschreiben?" required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Telefon" class="form-control"
+                       id="phone" data-error="Unter welcher Nummer dürfen wir Dich anrufen?" required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <button type="submit" class="btn btn-success pull-right">Bewerbung absenden</button>
+        </form>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<footer class="pt20 pb40">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2 mb20">
+                <div class="dropup">
+                    <div id="lang-dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="/assets/img/icon_speech_bubble.png" width="24" height="24">
+                        <span class="lang">Deutsch</span>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="lang-dd">
+                        <li><a class="active" href="#">Deutsch</a></li>
+                        
+                         
+                        
+                        
+                        <li><a href="/en/become-a-coach/apply/">English</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <span class="copyright">&copy; 2017 Uniq Vision</span>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-lg-2">
+                <h4>Das Programm</h4>
+                <a href="/de/in-13-wochen-zum-ziel/">In 13 Wochen zum Ziel</a>
+                <a href="/de/haeufige-fragen/">Häufige Fragen</a>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-lg-2">
+                <h4>Coach werden</h4>
+                <a href="/de/coach-werden/">Infos &amp; Bewerbung</a>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h4>UNIQ</h4>
+                <a href="">Philosophie</a>
+                <a href="/de/team/">Team</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-lg-offset-2">
+                <h4>Rechtliches</h4>
+                <a href="">Datenschutz</a>
+                <a href="/de/impressum/">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/cta.js"></script>
+<script src="/assets/js/bootstrap-select.min.js"></script>
+<script src="/assets/js/apply.js"></script>
+
+
+</body>
+</html>

@@ -15,4 +15,18 @@ $(document).ready(function () {
         else
             nb.fadeIn();
     });
+
+    // Get language
+    var vals = window.location.href.split('/');
+    var lang = (vals.length > 3) ? vals[3] : 'en';
+    var applyPage = {de: 'bewerben', en: 'apply'};
+
+    $('#start').on('submit', function (e) {
+        if (e.isDefaultPrevented()) return;
+        var av = $('#availability').val();
+        var tv = $('#time').val();
+        var ev = $('#experience').val();
+        e.preventDefault();
+        window.location = window.location.href.split('?')[0] + applyPage[lang] + '/?e=' + ev + '&t=' + tv + '&a=' + av;
+    });
 });

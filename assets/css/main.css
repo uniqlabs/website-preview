@@ -147,6 +147,9 @@ i.huge {
 .mb10 {
   margin-bottom: 10px; }
 
+.mb20 {
+  margin-bottom: 20px; }
+
 .mb30 {
   margin-bottom: 30px; }
 
@@ -255,8 +258,7 @@ i.huge {
 .navbar-default .navbar-nav > li > a.btn-basic {
   font-size: 12px;
   margin-left: 20px;
-  border: 1px solid #f9f9f9;
-  border-radius: 2px; }
+  border: 1px solid #f9f9f9; }
 
 .navbar-default .navbar-nav > li > a.btn-basic:hover {
   background: #fff;
@@ -436,22 +438,26 @@ i.huge {
   background: url("../img/bg_slant_bl_gray.svg") bottom left no-repeat, url("../img/uniq_cover_02.jpg") center center;
   background-size: 100vw auto, cover; }
 
-.application-box {
+.application-box, .application {
   background: rgba(255, 255, 255, 0.9);
   padding: 8px 16px;
   border-radius: 4px; }
-  .application-box h2 {
+  .application-box h2, .application h2 {
     font-size: 28px;
     margin: 16px 0 24px 0; }
-  .application-box label {
+  .application-box h4, .application h4 {
+    color: #26b7d4;
+    margin-top: 20px; }
+  .application-box label, .application label {
     font-size: 14px;
     font-weight: 300; }
-  .application-box .form-group button {
-    text-transform: none;
+  .application-box .form-group button, .application .form-group button {
+    font-family: "Raleway", sans-serif;
     font-size: 13px;
     font-weight: 300;
+    text-transform: none;
     color: #333; }
-  .application-box .dropdown-menu > li > a {
+  .application-box .dropdown-menu > li > a, .application .dropdown-menu > li > a {
     font-size: 13px;
     color: #333; }
 
