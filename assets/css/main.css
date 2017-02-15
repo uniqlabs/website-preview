@@ -34,7 +34,7 @@ html, body {
 body {
   position: relative; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Arimo", sans-serif; }
 
 h1 {
@@ -42,6 +42,10 @@ h1 {
 
 h2 {
   font-size: 36px; }
+
+h5 {
+  font-size: 16px;
+  color: #26b7d4; }
 
 p {
   font-size: 18px; }
@@ -453,12 +457,12 @@ i.huge {
     font-weight: 300; }
   .application-box .form-group button, .application .form-group button {
     font-family: "Raleway", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     text-transform: none;
     color: #333; }
   .application-box .dropdown-menu > li > a, .application .dropdown-menu > li > a {
-    font-size: 13px;
+    font-size: 14px;
     color: #333; }
 
 .coaching-what {
@@ -483,7 +487,7 @@ i.huge {
   background-size: 100vw auto, 100vw auto; }
   .coaching-prerequisites ul {
     color: #1a1a1a;
-    font-size: 16px;
+    font-size: 18px;
     margin: 16px 0 0 8px;
     list-style: none; }
     .coaching-prerequisites ul li {

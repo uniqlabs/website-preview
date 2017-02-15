@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://preview.uniq.vision/en/13-weeks-to-your-goal/</loc>
-</url>
-<url>
 <loc>http://preview.uniq.vision/en/become-a-coach/apply/</loc>
 </url>
 <url>
@@ -17,6 +14,9 @@
 </url>
 <url>
 <loc>http://preview.uniq.vision/en/</loc>
+</url>
+<url>
+<loc>http://preview.uniq.vision/en/the-uniq-method/</loc>
 </url>
 <url>
 <loc>http://preview.uniq.vision/en/team/</loc>
