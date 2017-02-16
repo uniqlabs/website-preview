@@ -29,4 +29,16 @@ $(document).ready(function () {
         e.preventDefault();
         window.location = window.location.href.split('?')[0] + applyPage[lang] + '/?e=' + ev + '&t=' + tv + '&a=' + av;
     });
+
+    // Init the testimonial slider
+    $('#testimonial-slides').slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: true,
+        appendArrows: null,
+        pauseOnDotsHover: true,
+        fade: true,
+        speed: 1000,
+        initialSlide: Math.floor(Math.random() * 3)
+    });
 });
