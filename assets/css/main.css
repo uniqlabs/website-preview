@@ -69,6 +69,11 @@ span.rv {
   background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto; }
 
+.half-cover {
+  width: 100%;
+  height: 60vh;
+  color: #fff; }
+
 /** Sizes */
 i.medium {
   font-size: 32px; }
@@ -269,57 +274,18 @@ i.huge {
   color: #1a1a1a; }
 
 /** Cover */
-.cover {
+.full-cover {
   width: 100%;
   height: calc(100vh + 20px);
-  background: url("../img/bg_slant_bl_gray.svg") bottom left no-repeat, url("../img/uniq_cover_01.jpg") center center;
+  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_03.jpg") center center;
   background-size: 100vw auto, cover; }
-  .cover .claim {
+  .full-cover .claim {
     color: #fff;
     font-weight: 400;
-    margin-bottom: 88px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
 
-@media (max-width: 576px) {
-  h1.claim {
-    font-size: 32px; } }
-.arrow {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left: -27px;
-  margin-bottom: 20px;
-  width: 54px;
-  height: 30px;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDcyIDQwIiB2ZXJzaW9uPSIxLjEiPjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kOyIgZD0iTSA2Ny4yNzY3Nyw0LjM4MDMxMTEgMzYsMzUuNjU3MDcxIDQuNzIzMjMsNC4zODAzMTExIi8+PC9zdmc+DQo=) no-repeat;
-  background-size: contain; }
-
-.bounce {
-  -webkit-animation: bounce 2.5s infinite;
-  animation: bounce 2.5s infinite; }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
-    transform: translateY(-8px); }
-  60% {
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    -o-transform: translateY(-4px);
-    transform: translateY(-4px); } }
 .what {
-  background: #f9f9f9 url("../img/bg_slant_br_blue.svg") bottom left no-repeat;
+  background: #fff;
   background-size: 100vw auto; }
 
 .features p {
@@ -342,49 +308,27 @@ i.huge {
   font-size: 12px; }
 
 .testimonials {
-  background: #26b7d4;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background: url("/assets/img/bg_slant_white_2.svg") top left no-repeat, url("/assets/img/bg_slant_white_3.svg") bottom left no-repeat, url("/assets/img/uniq_cover_20.jpg") no-repeat center center;
+  background-size: 100vw auto, 100vw auto, cover;
   color: #fff; }
-  .testimonials p {
-    padding-bottom: 48px; }
+  .testimonials h2 {
+    margin-top: 0; }
 
-.testimonial:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -54px;
-  bottom: 0;
-  width: 64px;
-  height: 64px;
-  background: url("../img/quote_open.png") no-repeat center center;
-  background-size: cover; }
-
-.testimonial:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -42px;
-  top: 10px;
-  width: 64px;
-  height: 64px;
-  background: url("../img/quote_close.png") no-repeat center center;
-  background-size: cover; }
-
-.how {
-  background: url("../img/bg_slant_b_red.svg") bottom left no-repeat, url("../img/bg_slant_t_blue_green.svg") top left no-repeat;
-  background-size: 100vw auto, 100vw auto; }
-  .how img {
-    margin-left: -2.5px; }
-  .how h3 {
-    color: #1a1a1a;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px; }
-  .how p {
-    color: #808080;
-    font-size: 18px; }
-  .how .card {
-    height: 100%; }
-    .how .card .front, .how .card .back {
-      padding: 20px 30px; }
+.how img {
+  margin-left: -2.5px; }
+.how h3 {
+  color: #1a1a1a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px; }
+.how p {
+  color: #808080;
+  font-size: 18px; }
+.how .card {
+  height: 100%; }
+  .how .card .front, .how .card .back {
+    padding: 20px 30px; }
 
 @media (min-width: 768px) {
   .connector-padding {
@@ -399,20 +343,23 @@ i.huge {
     padding-left: 110px;
     padding-right: 110px; } }
 .faq {
-  background: #e04e5e;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: url("/assets/img/bg_slant_white_4.svg") top left no-repeat, url("/assets/img/bg_slant_white_3.svg") bottom left no-repeat, url("/assets/img/uniq_cover_10_d.jpg") no-repeat center center;
+  background-size: 100vw auto, 100vw auto, cover;
   color: #fff; }
   .faq p {
     color: #f9f9f9;
     font-size: 15px; }
   .faq a {
     font-size: 18px;
-    color: #fae250; }
+    color: #fc535a; }
   .faq a:hover {
-    color: #eeb024; }
+    color: #e04e5e; }
 
 .good-to-know {
-  background: url("../img/bg_slant_tl_red.svg") top left no-repeat, url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
-  background-size: 100vw auto, 100vw auto; }
+  background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
+  background-size: 100vw auto; }
   .good-to-know .card h3 {
     font-family: "Raleway", sans-serif;
     font-size: 18px; }
@@ -439,7 +386,7 @@ i.huge {
 .coaching-cover {
   width: 100%;
   height: calc(100vh + 20px);
-  background: url("../img/bg_slant_bl_gray.svg") bottom left no-repeat, url("../img/uniq_cover_02.jpg") center center;
+  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_02.jpg") center center;
   background-size: 100vw auto, cover; }
 
 .application-box, .application {
