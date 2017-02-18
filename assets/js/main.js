@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Fix background cover jump on mobile (see http://stackoverflow.com/a/30200804)
-    $('.cover').css('height', window.innerHeight + 20);
+    $('.full-cover').css('height', window.innerHeight + 20);
 
     // Get current language
     var vals = window.location.href.split('/');
@@ -39,7 +39,7 @@ $(document).ready(function () {
         pauseOnDotsHover: true,
         fade: true,
         speed: 1000,
-        initialSlide: Math.floor(Math.random() * 3)
+        initialSlide: Math.floor(Math.random() * 5)
     });
 
     // Hook up the flippable cards

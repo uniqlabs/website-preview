@@ -87,6 +87,9 @@ span.rv
 .full-height
   height: 100%
 
+.upper
+  text-transform: uppercase
+
 .bg-slant-gray
   background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat
   background-size: 100vw auto
@@ -320,7 +323,7 @@ i.huge
 .full-cover
   width: 100%
   height: calc(100vh + 20px)
-  background: url('../img/bg_slant_bl_white.svg') bottom left no-repeat, url('../img/uniq_cover_03.jpg') center center
+  background: url('../img/bg_slant_bl_white.svg') bottom left no-repeat, url('../img/uniq_cover_03.jpg') bottom right no-repeat
   background-size: 100vw auto, cover
   .claim
     color: $white
@@ -352,13 +355,13 @@ i.huge
   font-size: 12px
 
 .testimonials
-  padding-top: 80px
-  padding-bottom: 50px
+  padding-top: 72px
+  padding-bottom: 48px
   background: url('/assets/img/bg_slant_white_2.svg') top left no-repeat, url('/assets/img/bg_slant_white_3.svg') bottom left no-repeat, url('/assets/img/uniq_cover_20.jpg') no-repeat center center
   background-size: 100vw auto, 100vw auto, cover
   color: $white
   h2
-    margin-top: 0
+    margin-top: 12px
 
 .how
   img
@@ -370,10 +373,6 @@ i.huge
   p
     color: $gray
     font-size: 18px
-  .card
-    height: 100%
-    .front, .back
-      padding: 20px 30px
 
 @media (min-width: 768px)
   .connector-padding
@@ -392,7 +391,7 @@ i.huge
 
 .faq
   padding-top: 40px
-  padding-bottom: 50px
+  padding-bottom: 60px
   background: url('/assets/img/bg_slant_white_4.svg') top left no-repeat, url('/assets/img/bg_slant_white_3.svg') bottom left no-repeat, url('/assets/img/uniq_cover_10_d.jpg') no-repeat center center
   background-size: 100vw auto, 100vw auto, cover
   color: $white
@@ -401,22 +400,23 @@ i.huge
     font-size: 15px
   a
     font-size: 18px
-    color: $brightRed
+    color: $lightBlue
   a:hover
-    color: $raspberry
+    color: $white
 
 .good-to-know
   background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat
   background-size: 100vw auto
   .card
     h3
-      font-family: $textFont
-      font-size: 18px
+      font-size: 30px
+      color: $lightBlue
     p
       font-size: 16px
     img
       margin-top: 10px
     .front
+      padding: 48px
       border: 1px solid $silver
     .back
       padding: 32px
@@ -437,7 +437,7 @@ i.huge
 .coaching-cover
   width: 100%
   height: calc(100vh + 20px)
-  background: url('../img/bg_slant_bl_white.svg') bottom left no-repeat, url('../img/uniq_cover_02.jpg') center center
+  background: url('../img/bg_slant_bl_white.svg') bottom left no-repeat, url('../img/uniq_cover_04.jpg') center center
   background-size: 100vw auto, cover
 
 .application-box, .application
@@ -464,8 +464,6 @@ i.huge
     color: $darkGray
 
 .coaching-what
-  background: $lightWhite url('../img/bg_slant_b_red.svg') bottom left no-repeat
-  background-size: 100vw auto
   .benefit
     img
       margin-bottom: 16px
@@ -476,13 +474,16 @@ i.huge
     color: $gray
 
 .coaching-testimonials
-  background: $raspberry
+  padding-top: 72px
+  padding-bottom: 48px
+  background: url('/assets/img/bg_slant_white_4.svg') top left no-repeat, url('/assets/img/bg_slant_bl_white.svg') bottom left no-repeat, url('/assets/img/uniq_cover_22.jpg') no-repeat center center
+  background-size: 100vw auto, 100vw auto, cover
   color: $white
   p
     padding-bottom: 48px
 
 .coaching-prerequisites
-  background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat, url('../img/bg_slant_tl_red.svg') top left no-repeat
+  background: url('../img/bg_slant_bl_gray_2.svg') bottom left no-repeat
   background-size: 100vw auto, 100vw auto
   ul
     color: $dark

@@ -65,6 +65,9 @@ span.rv {
 .full-height {
   height: 100%; }
 
+.upper {
+  text-transform: uppercase; }
+
 .bg-slant-gray {
   background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto; }
@@ -277,7 +280,7 @@ i.huge {
 .full-cover {
   width: 100%;
   height: calc(100vh + 20px);
-  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_03.jpg") center center;
+  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_03.jpg") bottom right no-repeat;
   background-size: 100vw auto, cover; }
   .full-cover .claim {
     color: #fff;
@@ -308,13 +311,13 @@ i.huge {
   font-size: 12px; }
 
 .testimonials {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 72px;
+  padding-bottom: 48px;
   background: url("/assets/img/bg_slant_white_2.svg") top left no-repeat, url("/assets/img/bg_slant_white_3.svg") bottom left no-repeat, url("/assets/img/uniq_cover_20.jpg") no-repeat center center;
   background-size: 100vw auto, 100vw auto, cover;
   color: #fff; }
   .testimonials h2 {
-    margin-top: 0; }
+    margin-top: 12px; }
 
 .how img {
   margin-left: -2.5px; }
@@ -325,10 +328,6 @@ i.huge {
 .how p {
   color: #808080;
   font-size: 18px; }
-.how .card {
-  height: 100%; }
-  .how .card .front, .how .card .back {
-    padding: 20px 30px; }
 
 @media (min-width: 768px) {
   .connector-padding {
@@ -344,7 +343,7 @@ i.huge {
     padding-right: 110px; } }
 .faq {
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   background: url("/assets/img/bg_slant_white_4.svg") top left no-repeat, url("/assets/img/bg_slant_white_3.svg") bottom left no-repeat, url("/assets/img/uniq_cover_10_d.jpg") no-repeat center center;
   background-size: 100vw auto, 100vw auto, cover;
   color: #fff; }
@@ -353,21 +352,22 @@ i.huge {
     font-size: 15px; }
   .faq a {
     font-size: 18px;
-    color: #fc535a; }
+    color: #26b7d4; }
   .faq a:hover {
-    color: #e04e5e; }
+    color: #fff; }
 
 .good-to-know {
   background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto; }
   .good-to-know .card h3 {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px; }
+    font-size: 30px;
+    color: #26b7d4; }
   .good-to-know .card p {
     font-size: 16px; }
   .good-to-know .card img {
     margin-top: 10px; }
   .good-to-know .card .front {
+    padding: 48px;
     border: 1px solid #ddd; }
   .good-to-know .card .back {
     padding: 32px;
@@ -386,7 +386,7 @@ i.huge {
 .coaching-cover {
   width: 100%;
   height: calc(100vh + 20px);
-  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_02.jpg") center center;
+  background: url("../img/bg_slant_bl_white.svg") bottom left no-repeat, url("../img/uniq_cover_04.jpg") center center;
   background-size: 100vw auto, cover; }
 
 .application-box, .application {
@@ -412,25 +412,25 @@ i.huge {
     font-size: 14px;
     color: #333; }
 
-.coaching-what {
-  background: #f9f9f9 url("../img/bg_slant_b_red.svg") bottom left no-repeat;
-  background-size: 100vw auto; }
-  .coaching-what .benefit img {
-    margin-bottom: 16px; }
-  .coaching-what .benefit p {
-    font-size: 15px; }
-  .coaching-what .disclaimer {
-    font-size: 14px;
-    color: #808080; }
+.coaching-what .benefit img {
+  margin-bottom: 16px; }
+.coaching-what .benefit p {
+  font-size: 15px; }
+.coaching-what .disclaimer {
+  font-size: 14px;
+  color: #808080; }
 
 .coaching-testimonials {
-  background: #e04e5e;
+  padding-top: 72px;
+  padding-bottom: 48px;
+  background: url("/assets/img/bg_slant_white_4.svg") top left no-repeat, url("/assets/img/bg_slant_bl_white.svg") bottom left no-repeat, url("/assets/img/uniq_cover_22.jpg") no-repeat center center;
+  background-size: 100vw auto, 100vw auto, cover;
   color: #fff; }
   .coaching-testimonials p {
     padding-bottom: 48px; }
 
 .coaching-prerequisites {
-  background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat, url("../img/bg_slant_tl_red.svg") top left no-repeat;
+  background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto, 100vw auto; }
   .coaching-prerequisites ul {
     color: #1a1a1a;
