@@ -33,7 +33,7 @@ $(document).ready(function () {
     // Init the testimonial slider
     $('#testimonial-slides').slick({
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 12000,
         dots: true,
         appendArrows: null,
         pauseOnDotsHover: true,

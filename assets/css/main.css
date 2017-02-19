@@ -319,15 +319,16 @@ i.huge {
   .testimonials h2 {
     margin-top: 12px; }
 
-.how img {
-  margin-left: -2.5px; }
 .how h3 {
+  margin-top: 32px;
   color: #1a1a1a;
   font-family: "Raleway", sans-serif;
-  font-size: 20px; }
+  font-size: 18px; }
+.how h3.last {
+  margin-top: 4px; }
 .how p {
   color: #808080;
-  font-size: 18px; }
+  font-size: 16px; }
 
 @media (min-width: 768px) {
   .connector-padding {
@@ -360,8 +361,9 @@ i.huge {
   background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto; }
   .good-to-know .card h3 {
-    font-size: 30px;
-    color: #26b7d4; }
+    font-size: 28px;
+    font-weight: 700;
+    color: #e04e5e; }
   .good-to-know .card p {
     font-size: 16px; }
   .good-to-know .card img {
@@ -412,8 +414,6 @@ i.huge {
     font-size: 14px;
     color: #333; }
 
-.coaching-what .benefit img {
-  margin-bottom: 16px; }
 .coaching-what .benefit p {
   font-size: 15px; }
 .coaching-what .disclaimer {
@@ -430,11 +430,11 @@ i.huge {
     padding-bottom: 48px; }
 
 .coaching-prerequisites {
-  background: url("../img/bg_slant_bl_gray_2.svg") bottom left no-repeat;
+  background: url("../img/bg_slant_br_gray_2.svg") bottom left no-repeat;
   background-size: 100vw auto, 100vw auto; }
   .coaching-prerequisites ul {
     color: #1a1a1a;
-    font-size: 18px;
+    font-size: 16px;
     margin: 16px 0 0 8px;
     list-style: none; }
     .coaching-prerequisites ul li {
