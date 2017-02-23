@@ -13,6 +13,7 @@
     <meta property="og:url" content="/en/"/>
     <meta property="og:locale" content="en_US"/>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/slick.css" rel="stylesheet">
     <link href="/assets/css/slick-theme.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
@@ -43,12 +44,36 @@
 <section id="welcome" class="full-cover hbox">
     <div class="container full-height">
         <div class="row full-height hbox flex-center">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12 claim text-center">
                 <h1 class="claim">Achieve a life goal<br/>in 3 months.</h1>
+                <h2 class="launch-modal grow">
+                    <span class="play-button"><i class="fa fa-play"></i></span>See Anka's Story
+                </h2>
             </div>
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cover-video" class="embed-responsive-item"
+                                src="https://player.vimeo.com/video/22428395?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=26b7d4"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section id="what-is-it-about" class="what pt10 pb20">
     <div class="container">

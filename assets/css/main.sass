@@ -24,7 +24,6 @@ $brightRed: #fc535a
 $darkYellow: #eeb024
 $lightYellow: #fae250
 
-
 /* General */
 *
   margin: 0
@@ -99,6 +98,12 @@ span.rv
   height: 60vh
   color: $white
 
+.grow
+  transition: all .1s ease-in-out
+
+.grow:hover
+  transform: scale(1.05)
+
 /** Sizes **/
 i.medium
   font-size: 32px
@@ -109,6 +114,9 @@ i.huge
 /** Colors **/
 .green
   color: $green
+
+.red
+  color: $raspberry
 
 .bg-light-white
   color: $darkGray
@@ -273,8 +281,6 @@ i.huge
   .text-md-center
     text-align: center
 
-
-
 /** Visibility **/
 @media (max-width: 767px)
   .hidden-sm-down
@@ -326,9 +332,72 @@ i.huge
   background: url('../img/bg_slant_bl_white.svg') bottom left no-repeat, url('../img/uniq_cover_03.jpg') bottom right no-repeat
   background-size: 100vw auto, cover
   .claim
-    color: $white
-    font-weight: 400
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+    margin-top: 10vh
+    h1
+      color: $white
+      font-weight: 400
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+      margin-bottom: 20vh
+    h2
+      font-family: $textFont
+      font-size: 24px
+      color: $lightWhite
+      cursor: pointer
+      .play-button
+        display: inline-block
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background: $white
+        color: $lightBlue
+        vertical-align: middle
+        text-align: center
+        padding-left: 4px
+        margin-right: 16px
+        line-height: 50px
+        opacity: 0.8
+        transition: all .1s ease-in-out
+    h2:hover
+      color: $white
+      .play-button
+        background: $lightBlue
+        color: $white
+        opacity: 1
+
+.modal-backdrop.in
+  opacity: 0.85
+
+.modal-dialog
+  width: 100%
+
+@media (min-width: 992px)
+  .modal-dialog
+    width: 80%
+
+.modal-content
+  background: none
+  border: 0
+  border-radius: 0
+  box-shadow: none
+
+.modal-body
+  padding: 0 25px 25px 25px
+
+.modal-header
+  padding: 25px 25px 15px 25px
+  text-align: right
+
+.modal-header, .modal-footer
+  border: 0
+
+.modal-header .close
+  float: none
+  margin: 0
+  font-size: 36px
+  color: $white
+  font-weight: 300
+  text-shadow: none
+  opacity: 1
 
 .what
   background: $white

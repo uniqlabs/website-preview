@@ -6,28 +6,29 @@ $(document).ready(function () {
     var vals = window.location.href.split('/');
     var lang = (vals.length > 3) ? vals[3] : 'en';
 
-    // Animate the arrow
-    var a = $('.arrow');
+    // Fade in/out navbar
     var nb = $('#nav');
     var st = $(this).scrollTop();
-    if (st > 20)
-        stopAnimation();
-    else
-        a.delay(2500).fadeIn(1000);
     if (st > 160)
         nb.hide();
     else
         nb.show();
     $(window).scroll(function () {
-        var st = $(this).scrollTop();
-        if (st > 20)
-            stopAnimation();
-        else
-            a.show();
+        st = $(this).scrollTop();
         if (st > 160)
             nb.fadeOut();
         else
             nb.fadeIn();
+    });
+
+    // Hook up the video modal
+    $('.launch-modal').on('click', function (e) {
+        e.preventDefault();
+        $('#modal-video').modal();
+        startVideo();
+    });
+    $('#modal-video').on('hidden.bs.modal', function () {
+        stopVideo();
     });
 
     // Init the testimonial slider
@@ -71,7 +72,7 @@ $(document).ready(function () {
     function signUp(firstName, email) {
         setBusy(true);
         var s = {type: 'POST', contentType: 'application/json'};
-        s.data = {firstName: firstName, email: email, lang: lang};
+        s.data = {type: 'client', firstName: firstName, email: email, lang: lang};
         s.data[r('zntvp')] = r('tjHFzT35mzrhthupR5Ej5AEDX4QiaaTe');
         s[r('hey')] = r('uggcf://havd-fvtahc.urebxhncc.pbz/hfref');
         s.data = JSON.stringify(s.data);
@@ -80,9 +81,11 @@ $(document).ready(function () {
             showAlert(true, firstName);
         };
         s.error = function (jqxhr, status, err) {
-            console.log('jqXHR: ' + JSON.stringify(jqxhr));
-            console.log('Status: ' + status);
-            console.log('Error: ' + err);
+            if (err) {
+                console.log('jqXHR: ' + JSON.stringify(jqxhr));
+                console.log('Status: ' + status);
+                console.log('Error: ' + err);
+            }
             setBusy(false);
             showAlert(false);
         };
@@ -90,10 +93,17 @@ $(document).ready(function () {
     }
 
     // Helpers
-    function stopAnimation() {
-        a.stop();
-        a.hide();
-        a.removeClass('bounce');
+    function startVideo() {
+        var frame = $('iframe#cover-video');
+        var vidsrc = frame.attr('src');
+        frame.attr('src', vidsrc + '&autoplay=true');
+    }
+
+    function stopVideo() {
+        var frame = $('iframe#cover-video');
+        var vidsrc = frame.attr('src');
+        frame.attr('src', '');
+        frame.attr('src', vidsrc);
     }
 
     function setBusy(b) {
