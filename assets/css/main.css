@@ -678,11 +678,11 @@ footer {
   display: none;
   width: 25vw;
   height: 33.33vw;
-  background: #333;
+  background: #e8e8e8;
   z-index: 1000;
-  padding-top: 10vw; }
+  padding-top: 15vw; }
   .image-testimonials .icon h3 {
-    color: #fff;
+    color: #1a1a1a;
     font-size: 24px;
     text-transform: uppercase; }
 .image-testimonials .tile:hover h3, .image-testimonials .tile.active h3 {
