@@ -10,7 +10,7 @@
     <meta property="og:title" content="UNIQ"/>
     <meta property="og:image" content="http://www.uniq.vision/assets/img/uniq_facebook_bg.png"/>
     <meta property="og:description" content="UNIQ is the digital coach for your life goals. Our revolutionary training program helps you identify and realize the life goals you've always wanted to achieve."/>
-    <meta property="og:url" content="/en/"/>
+    <meta property="og:url" content="/en/v2/"/>
     <meta property="og:locale" content="en_US"/>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
@@ -35,17 +35,43 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right" id="menu">
                 <li><a href="#what-is-it-about">What is it?</a></li>
+                <li><a href="#join-now">Sign up</a></li>
                 <li><a class="btn-basic" href="/en/become-a-coach/">Become a Coach</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section id="welcome" class="full-cover hbox">
+<section id="welcome" class="full-cover">
     <div class="container full-height">
         <div class="row full-height hbox flex-center">
             <div class="col-xs-12 claim text-center">
                 <h1 class="claim">Achieve a life goal<br/>in 3 months.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="what-is-it-about" class="what pt10 pb20">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>UNIQ is the digital coach for your life goals.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-xl-offset-2 col-xl-8 text-center">
+                <p>Our revolutionary training program helps you identify and realize the life goals you've always wanted to achieve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ankas-story" class="video-testimonial">
+    <div class="container full-height">
+        <div class="row full-height hbox flex-center">
+            <div class="col-xs-10 col-sm-6 claim-box text-center">
+                <h1>Anka has changed her life<br/>with UNIQ.</h1>
                 <h2 class="launch-modal grow">
                     <span class="play-button"><i class="fa fa-play"></i></span>See Anka's story
                 </h2>
@@ -66,8 +92,8 @@
                 <div class="modal-video">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe id="cover-video" class="embed-responsive-item"
-                                src="https://player.vimeo.com/video/22428395?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=26b7d4"
-                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                src="//www.youtube.com/embed/SWYJVZ00qyw?autoplay=0&showinfo=0"
+                                frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -75,122 +101,134 @@
     </div>
 </div>
 
-<section id="what-is-it-about" class="what pt10 pb20">
+<section id="join-now" class="signup pt10 pb20">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h2>UNIQ is the digital coach for your life goals.</h2>
+                <h2>Join now and use our program free of charge.</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-xl-offset-2 col-xl-8 text-center">
-                <p>Our revolutionary training program helps you identify and realize the life goals you've always wanted to achieve.</p>
+            <div id="signupRow" class="row mt20">
+                <form id="signup" role="form" data-toggle="validator" data-disable="false">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-2 lg-pdr5">
+                        <div class="form-group">
+                            <input type="text" placeholder="First name" class="form-control"
+                                   id="firstName" data-error="How shall we call you?" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2 lg-pdl5 lg-pdr5">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email address" class="form-control"
+                                   id="email"
+                                   data-error="Please enter a valid email address." required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2 lg-pdl5">
+                        <div class="form-group">
+                            <button id="submit" type="submit" class="btn btn-success btn-block">
+                                Start now
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div id="signupRow" class="row mt20">
-            <form id="signup" role="form" data-toggle="validator" data-disable="false">
-                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-2 lg-pdr5">
-                    <div class="form-group">
-                        <input type="text" placeholder="First name" class="form-control"
-                               id="firstName" data-error="How shall we call you?" required>
-                        <div class="help-block with-errors"></div>
-                    </div>
+            <div id="featureRow" class="row">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 features">
+                    <p class="p5"><b>Limited places left.</b> Beta users get exclusive access to our program and can use it free of charge. This includes:</p>
+                    <ul>
+                        <li>Online modules to identify and visualize your life goals</li>
+                        <li>A 1-on-1 coaching session on the phone</li>
+                        <li>A personalized action plan</li>
+                        <li>12 weeks of check-ins with your coach via chat to follow through</li>
+                    </ul>
                 </div>
-                <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2 lg-pdl5 lg-pdr5">
-                    <div class="form-group">
-                        <input type="email" placeholder="Email address" class="form-control" id="email"
-                               data-error="Please enter a valid email address." required>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2 lg-pdl5">
-                    <div class="form-group">
-                        <button id="submit" type="submit" class="btn btn-success btn-block">
-                            Start now
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="featureRow" class="row">
-            <div class="col-xs-12 col-md-offset-3 col-md-6 features">
-                <p class="p5"><b>Limited places left.</b> Beta users get exclusive access to our program and can use it free of charge. This includes:</p>
-                <ul>
-                    <li>Online modules to identify and visualize your life goals</li>
-                    <li>A 1-on-1 coaching session on the phone</li>
-                    <li>A personalized action plan</li>
-                    <li>12 weeks of check-ins with your coach via chat to follow through</li>
-                </ul>
             </div>
-        </div>
-        <div id="alertRow" class="row mt20">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 text-center">
-                <div id="signupAlert" class="alert" role="alert"></div>
+            <div id="alertRow" class="row mt20">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 text-center">
+                    <div id="signupAlert" class="alert" role="alert"></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="testimonials" class="testimonials">
-    <div class="container">
-        <div id="testimonial-slides">
-            
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 testimonial hp20">
-                    <img class="center-block" src="/assets/img/quote_close.png" width="64" height="64">
-                    <h2>Alex, 32</h2>
-                    <p>2 months ago I was coming to the end of my teaching education and all I knew was that I didn’t want to be a teacher.
-The UNIQ action plan really helped me find a new direction. Within one week I had secured a new trainee position! It
-feels great to start moving on and to stop whining.</p>
-
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 testimonial hp20">
-                    <img class="center-block" src="/assets/img/quote_close.png" width="64" height="64">
-                    <h2>Astrid, 46</h2>
-                    <p>6 months ago my husband left me for another woman. My life fell to pieces. Thanks to UNIQ I now have a new vision.
-And I am moving towards the goals in my action plan with big strides - it’s astonishing. I even had my first date!</p>
-
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 testimonial hp20">
-                    <img class="center-block" src="/assets/img/quote_close.png" width="64" height="64">
-                    <h2>Eckart, 78</h2>
-                    <p>I have everything I could wish for - a great family, wealth and health. Still, I kept wondering what else was
-possible. For years I have been trying to learn Russian but never made any meaningful progress. My goal now is to
-guide my family through the Moscow subway next spring. Thank you, UNIQ!</p>
-
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 testimonial hp20">
-                    <img class="center-block" src="/assets/img/quote_close.png" width="64" height="64">
-                    <h2>Ralf, 41</h2>
-                    <p>I am currently applying for my dream job with the help of UNIQ. The 1-on-1 sessions are incredibly inspiring and have
-helped me overcome my resistance to change. It’s been such a relief. I am now tackling the interviews with confidence
- and a positive attitude.</p>
-
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 testimonial hp20">
-                    <img class="center-block" src="/assets/img/quote_close.png" width="64" height="64">
-                    <h2>Uta, 41</h2>
-                    <p>I had been stuck for a long time trying to find my calling. Uniq has ended this struggle. In the coaching session I
-discovered what’s been holding me back so far. Now I am making good progress towards my goal and the encouragement
-and tips in the chat are a huge help. This feels great, thank you!</p>
-
-                </div>
-            </div>
-            
+<section class="image-testimonials">
+    <div id="tile1" class="tile hbox flex-center">
+        <img class="img-responsive" src="/assets/img/uniq_user_11.jpg">
+        <div class="caption text-center">
+            <h3>Beziehung</h3>
         </div>
+    </div>
+    <div id="testi1" class="testi l25">
+        <h3>Melanie, 56</h3>
+        <p>Vor vier Jahren habe ich mich von meinem Mann getrennt und seitdem bin ich Single. Nach der erbitterten
+            Scheidung ist mein Ziel nun eine glücklichen Beziehung. Ich habe unterschiedliche Coaching-Programme
+            ausprobiert. Mein UNIQ-Coach hat meine mentale Barriere geknackt, das war so befreiend. Durch die Übungen
+            habe ich realisiert, was ich wirklich in einer Beziehung möchte und der Aktionsplan hat mich zurück ins
+            Dating gebracht. Nach so vielen Jahren Ehe war das erstmal abschreckend, aber mein Coach war immer da im
+            Chat. Und jetzt bin ich frisch verliebt!</p>
+    </div>
+    <div id="icon1" class="icon l75 text-center">
+        <img src="/assets/img/icon_heart.png" width="96" height="96">
+        <h3>Beziehung</h3>
+    </div>
+    <div id="tile2" class="tile hbox flex-center">
+        <img class="img-responsive" src="/assets/img/uniq_user_06.jpg">
+        <div class="caption text-center">
+            <h3>Vitalität</h3>
+        </div>
+    </div>
+    <div id="testi2" class="testi l50">
+        <h3>Jörg, 48</h3>
+        <p>Ich war die letzten Jahre physisch und psychisch ziemlich am Ende. Ich machte diverse Psychotherapien aber
+            besser wurde es nicht. Als mir ein Freund UNIQ empfahl, war ich zunächst skeptisch, aber inzwischen bin ich
+            total begeistert. Heute bin ich sehr stabil und folge weiter dem Plan, den wir zusammen erarbeitet haben.
+            Das fühlt sich sehr gut an! In Phasen der Entmutigung kann ich mich jederzeit an meinen Coach wenden. Ich
+            glaube nicht, dass ich ohne UNIQ heute so weit wäre. Ich brenne richtig für das Projekt!</p>
+    </div>
+    <div id="icon2" class="icon text-center">
+        <img src="/assets/img/icon_health.png" width="96" height="96">
+        <h3>Vitalität</h3>
+    </div>
+    <div id="tile3" class="tile hbox flex-center">
+        <img class="img-responsive" src="/assets/img/uniq_user_09.jpg">
+        <div class="caption text-center">
+            <h3>Karriere</h3>
+        </div>
+    </div>
+    <div id="testi3" class="testi">
+        <h3>Elli, 34</h3>
+        <p>In meinen bisherigen Jobs war ich sehr oft frustriert und unzufrieden. Auf der Suche nach meinem Traumjob
+            habe ich viele Bücher gelesen, aber konnte diese schlecht in die Tat umsetzen. Mit meinem UNIQ-Coach habe
+            ich einen sehr konkreten Aktionsplan erstellt, um mich als Organisations-Beraterin selbstständig zu
+            machen. Das funktioniert super und ich erreiche alle Zwischenschritte noch schneller als geplant. Ich bin
+            für eine ganz exklusive Ausbildung angenommen worden und habe top Mentoren gefunden. Ich bin begeistert!</p>
+    </div>
+    <div id="icon3" class="icon l75 text-center">
+        <img src="/assets/img/icon_career.png" width="96" height="96">
+        <h3>Karriere</h3>
+    </div>
+    <div id="tile4" class="tile">
+        <img class="img-responsive" src="/assets/img/uniq_user_05.jpg">
+        <div class="caption text-center">
+            <h3>Freizeit</h3>
+        </div>
+    </div>
+    <div id="testi4" class="testi l25">
+        <h3>Eckart, 78</h3>
+        <p>Ich habe alles, was ich mir je gewünscht habe - eine tolle Familie, Wohlstand und Gesundheit. Trotzdem habe
+            ich mich gefragt, was noch möglich ist. Seit Jahren komme ich mit dem Russisch-Lernen nicht voran. Nun habe
+            ich die Vision, meine Familie im Frühjahr in Moskau allein durch die U-Bahn zu lotsen. Mit dieser Vision und
+            dem konkreten Aktionsplan geht es auf einmal ganz leicht und macht richtig Spaß: ich lerne fast spielerisch
+            viele neue Vokabeln am Tag, mache einen Russisch-Kurs und lese die russischen Nachrichten online. Danke an
+            UNIQ!</p>
+    </div>
+    <div id="icon4" class="icon text-center">
+        <img src="/assets/img/icon_education.png" width="96" height="96">
+        <h3>Weiterbildung</h3>
     </div>
 </section>
 

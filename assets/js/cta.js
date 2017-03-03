@@ -34,8 +34,4 @@ $(document).ready(function () {
             $('#firstName').focus();
         });
     }
-
-    function endsWith(str, suffix) {
-        return str.indexOf(suffix, str.length - suffix.length) !== -1;
-    }
 });

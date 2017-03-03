@@ -31,6 +31,19 @@ $(document).ready(function () {
         stopVideo();
     });
 
+    // Hook up the image testis
+    for (var i = 1; i <= 4; i++) {
+        const testi = $('#testi' + i);
+        const icon = $('#icon' + i);
+        $('#tile' + i).hover(function () {
+            testi.fadeIn();
+            icon.fadeIn();
+        }, function () {
+            testi.fadeOut();
+            icon.fadeOut();
+        });
+    }
+
     // Init the testimonial slider
     $('#testimonial-slides').slick({
         autoplay: true,
@@ -96,14 +109,14 @@ $(document).ready(function () {
     function startVideo() {
         var frame = $('iframe#cover-video');
         var vidsrc = frame.attr('src');
-        frame.attr('src', vidsrc + '&autoplay=true');
+        frame.attr('src', vidsrc.replace('autoplay=0', 'autoplay=1'));
     }
 
     function stopVideo() {
         var frame = $('iframe#cover-video');
         var vidsrc = frame.attr('src');
         frame.attr('src', '');
-        frame.attr('src', vidsrc);
+        frame.attr('src', vidsrc.replace('autoplay=1', 'autoplay=0'));
     }
 
     function setBusy(b) {

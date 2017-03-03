@@ -221,16 +221,6 @@ i.huge {
 @media (min-width: 992px) {
   .lg-pdl25 {
     padding-left: 25px; } }
-/** Position */
-.l25 {
-  left: 25vw; }
-
-.l50 {
-  left: 50vw; }
-
-.l75 {
-  left: 75vw; }
-
 /** Alignment */
 .text-left-md-right {
   text-align: left; }
@@ -344,7 +334,6 @@ i.huge {
   .modal-dialog {
     width: 80%; } }
 .modal-content {
-  margin-top: 0;
   background: none;
   border: 0;
   border-radius: 0;
@@ -354,7 +343,7 @@ i.huge {
   padding: 0 25px 25px 25px; }
 
 .modal-header {
-  padding: 0 25px 15px 25px;
+  padding: 25px 25px 15px 25px;
   text-align: right; }
 
 .modal-header, .modal-footer {
@@ -445,7 +434,7 @@ i.huge {
   .good-to-know .card h3 {
     font-size: 28px;
     font-weight: 700;
-    color: #eeb024; }
+    color: #e04e5e; }
   .good-to-know .card p {
     font-size: 16px; }
   .good-to-know .card img {
@@ -476,7 +465,7 @@ i.huge {
 .application-box, .application {
   background: rgba(255, 255, 255, 0.9);
   padding: 8px 16px;
-  border-radius: 8px; }
+  border-radius: 4px; }
   .application-box h2, .application h2 {
     font-size: 28px;
     margin: 16px 0 24px 0; }
@@ -580,123 +569,5 @@ footer {
     margin: 8px 0 18px 0; }
   footer a {
     margin: 6px 0; } }
-/* NEW STYLES */
-.video-testimonial {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/uniq_cover_07.jpg") top left no-repeat;
-  background-size: cover; }
-  .video-testimonial .claim-box {
-    padding-top: 16px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 8px; }
-  .video-testimonial h1 {
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
-  .video-testimonial h2 {
-    display: inline-block;
-    margin-top: 0;
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
-    color: #f9f9f9;
-    cursor: pointer; }
-    .video-testimonial h2 .play-button {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: #fff;
-      color: #26b7d4;
-      vertical-align: middle;
-      text-align: center;
-      padding-left: 5px;
-      margin-right: 16px;
-      line-height: 50px;
-      opacity: 0.8;
-      transition: all 0.1s ease-in-out; }
-  .video-testimonial h2:hover {
-    color: #fff; }
-    .video-testimonial h2:hover .play-button {
-      background: #26b7d4;
-      color: #fff;
-      opacity: 1; }
 
-.image-testimonials .header {
-  width: 100%;
-  height: 64px;
-  background: #26b7d4; }
-  .image-testimonials .header h2 {
-    color: #fff;
-    line-height: 64px; }
-.image-testimonials .tile {
-  display: block;
-  position: relative;
-  float: left;
-  width: 25vw;
-  background: #000;
-  cursor: pointer; }
-  .image-testimonials .tile h3, .image-testimonials .tile h5 {
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .image-testimonials .tile h3 {
-    top: 50%;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.3s ease; }
-  .image-testimonials .tile .backdrop {
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    line-height: 120px;
-    margin-top: -120px;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)); }
-  .image-testimonials .tile h5 {
-    bottom: 0;
-    font-size: 28px;
-    opacity: 0;
-    transition: 0.3s ease; }
-  .image-testimonials .tile img {
-    opacity: 0.5;
-    transition: 0.3s ease; }
-.image-testimonials .testi {
-  position: absolute;
-  display: none;
-  width: 50vw;
-  height: 33.33vw;
-  background: #26b7d4;
-  color: #fff;
-  z-index: 1000;
-  padding: 20px; }
-.image-testimonials .icon {
-  position: absolute;
-  display: none;
-  width: 25vw;
-  height: 33.33vw;
-  background: #333;
-  z-index: 1000;
-  padding-top: 10vw; }
-  .image-testimonials .icon h3 {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase; }
-.image-testimonials .tile:hover h3, .image-testimonials .tile.active h3 {
-  opacity: 0; }
-.image-testimonials .tile:hover h5, .image-testimonials .tile.active h5 {
-  bottom: 5%;
-  opacity: 1; }
-.image-testimonials .tile:hover img, .image-testimonials .tile.active img {
-  opacity: 1; }
-
-@media (max-width: 576px) {
-  .image-testimonials .tile {
-    width: 25vw; }
-  .image-testimonials .tile:first-of-type {
-    width: 75vw; } }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main2.css.map */
