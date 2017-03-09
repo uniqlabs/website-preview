@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     // Hook up the sign up button at the bottom
     $('#toSignUp').on('click', gotoSignUp);
+    $('#toApplication').on('click', scrollToApplication);
 
     function gotoSignUp(event) {
         event.preventDefault();
@@ -29,9 +30,17 @@ $(document).ready(function () {
 
     function scrollToSignUp() {
         $('html, body').animate({
-            scrollTop: $('.what').offset().top
+            scrollTop: $('.signup').offset().top
         }, 300, function () {
             $('#firstName').focus();
+        });
+    }
+
+    function scrollToApplication() {
+        $('html, body').animate({
+            scrollTop: $('.application-box').offset().top
+        }, 300, function () {
+            $('#experience').focus();
         });
     }
 });

@@ -21,6 +21,11 @@ $(document).ready(function () {
             nb.fadeIn();
     });
 
+    // Close mobile menu when item is clicked
+    $('.mobile-menu ul li a').on('click', function (e) {
+        $('.mobile-menu input').prop('checked', false);
+    });
+
     // Hook up the video modal
     $('.launch-modal').on('click', function (e) {
         e.preventDefault();
@@ -31,30 +36,63 @@ $(document).ready(function () {
         stopVideo();
     });
 
-    // Hook up the image testis
-    for (var i = 1; i <= 4; i++) {
-        const testi = $('#testi' + i);
-        const icon = $('#icon' + i);
-        $('#tile' + i).hover(function () {
-            testi.fadeIn();
-            icon.fadeIn();
-        }, function () {
-            testi.fadeOut();
-            icon.fadeOut();
-        });
-    }
+    // Hook up the image testimonials
+    const first = Math.floor(Math.random() * 4);
+    $('#testimonial-images').slick({
+        arrows: false,
+        asNavFor: '#testimonial-statements',
+        autoplay: true,
+        autoplaySpeed: 12000,
+        centerMode: true,
+        centerPadding: '40px',
+        dots: false,
+        focusOnSelect: true,
+        initialSlide: first,
+        responsive: [
+            {
+                breakpoint: 512,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
+    $('#testimonial-statements').slick({
+        arrows: false,
+        asNavFor: '#testimonial-images',
+        dots: false,
+        fade: true,
+        initialSlide: first,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    // // Hook up the image testis
+    // for (var i = 1; i <= 4; i++) {
+    //     const testi = $('#testi' + i);
+    //     const icon = $('#icon' + i);
+    //     $('#tile' + i).hover(function () {
+    //         testi.fadeIn();
+    //         icon.fadeIn();
+    //     }, function () {
+    //         testi.fadeOut();
+    //         icon.fadeOut();
+    //     });
+    // }
 
     // Init the testimonial slider
-    $('#testimonial-slides').slick({
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: true,
-        appendArrows: null,
-        pauseOnDotsHover: true,
-        fade: true,
-        speed: 1000,
-        initialSlide: Math.floor(Math.random() * 5)
-    });
+    // $('#testimonial-slides').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 10000,
+    //     dots: true,
+    //     appendArrows: null,
+    //     pauseOnDotsHover: true,
+    //     fade: true,
+    //     speed: 1000,
+    //     initialSlide: Math.floor(Math.random() * 5)
+    // });
 
     // Hook up the flippable cards
     $('.card').flip({
